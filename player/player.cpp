@@ -16,9 +16,9 @@ void drawPlayer2D(){
 
 void buttons(unsigned char key, int x, int y){
 	if(key=='a'){ pa+=5; pa=FixAng(pa); pdx=cos(degToRad(pa)); pdy=-sin(degToRad(pa));}
-	if(key=='w'){ pa-=5; pa=FixAng(pa); pdx=cos(degToRad(pa)); pdy=-sin(degToRad(pa));}
+	if(key=='d'){ pa-=5; pa=FixAng(pa); pdx=cos(degToRad(pa)); pdy=-sin(degToRad(pa));}
 	if(key=='s'){ px+=pdx*5; py+=pdy*5;}
-	if(key=='d'){ px-=pdx*5; py-=pdy*5;}
+	if(key=='w'){ px-=pdx*5; py-=pdy*5;}
 	glutPostRedisplay();
 }
 
